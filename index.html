@@ -10,71 +10,77 @@
 </head>
 <body>
     <header class="header">
-        <nav class="header__nav">
-            <div class="nav__center">
-
-                <div class="nav__header">
-                    <a href="index.html" class="nav__logo">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="3" y1="21" x2="21" y2="21" />
-                            <path d="M5 21v-14l8 -4v18" />
-                            <path d="M19 21v-10l-6 -4" />
-                            <line x1="9" y1="9" x2="9" y2="9.01" />
-                            <line x1="9" y1="12" x2="9" y2="12.01" />
-                            <line x1="9" y1="15" x2="9" y2="15.01" />
-                            <line x1="9" y1="18" x2="9" y2="18.01" />
-                        </svg>
-                        <span>HotelExperience</span>
-                    </a>
-                    <button class="nav__btnMenu" id="btn-menu">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <line x1="4" y1="6" x2="20" y2="6" />
-                            <line x1="4" y1="12" x2="20" y2="12" />
-                            <line x1="4" y1="18" x2="20" y2="18" />
-                        </svg>
-                    </button>
+        <div class="header__opacity">
+            <nav class="header__nav">
+                <div class="nav__center">
+                    <div class="nav__header">
+                        <a href="index.html" class="nav__logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-skyscraper" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="3" y1="21" x2="21" y2="21" />
+                                <path d="M5 21v-14l8 -4v18" />
+                                <path d="M19 21v-10l-6 -4" />
+                                <line x1="9" y1="9" x2="9" y2="9.01" />
+                                <line x1="9" y1="12" x2="9" y2="12.01" />
+                                <line x1="9" y1="15" x2="9" y2="15.01" />
+                                <line x1="9" y1="18" x2="9" y2="18.01" />
+                            </svg>
+                            <span>HotelExperience</span>
+                        </a>
+                        <button class="nav__btnMenu" id="btn-menu">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#fd0061" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                <line x1="4" y1="6" x2="20" y2="6" />
+                                <line x1="4" y1="12" x2="20" y2="12" />
+                                <line x1="4" y1="18" x2="20" y2="18" />
+                            </svg>
+                        </button>
+                    </div>
+    
+                    <ul class="nav__links" id="links">
+                        <li>
+                            <a class="link__section link__section--view" href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="link__section" href="#">Ofertas</a>
+                        </li>
+                        <li>
+                            <a class="link__section" href="#">Nosotros</a>
+                        </li>
+                        <li>
+                            <a class="link__section" href="#">Contacto</a>
+                        </li>
+                        <li>
+                            <a class="link__section" href="#">Testimoniales</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="nav__socials">
+                        <li>
+                            <a href="#">
+                                <img src="src/img/instagram.svg" alt="">
+                            </a>
+                        </li>
+                            <a href="#">
+                                <img src="src/img/facebook.svg" alt="">
+                            </a>
+                        </li>
+                            <a href="#">
+                                <img src="src/img/twitter.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-
-                <ul class="nav__links" id="links">
-                    <li>
-                        <a class="link__section link__section--view" href="#">Inicio</a>
-                    </li>
-                    <li>
-                        <a class="link__section" href="#">Ofertas</a>
-                    </li>
-                    <li>
-                        <a class="link__section" href="#">Nosotros</a>
-                    </li>
-                    <li>
-                        <a class="link__section" href="#">Contacto</a>
-                    </li>
-                    <li>
-                        <a class="link__section" href="#">Testimoniales</a>
-                    </li>
-                </ul>
-
-                <ul class="nav__socials">
-                    <li>
-                        <a href="#">
-                            <img src="src/img/instagram.svg" alt="">
-                        </a>
-                    </li>
-                        <a href="#">
-                            <img src="src/img/facebook.svg" alt="">
-                        </a>
-                    </li>
-                        <a href="#">
-                            <img src="src/img/twitter.svg" alt="">
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-        </nav>
+            </nav>
+            <div class="header__info">
+                <h1>el viaje de tus sueños</h1>
+            </div>  
+        </div>
     </header>
 
+    <main>
+        
+    </main>
     <script src="src/js/app.js"></script>
 </body>
 </html>

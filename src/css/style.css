@@ -84,9 +84,24 @@ li {
 /* proyect */
 /* header */
 .header {
-    min-height: 100vh;
+    height: 100vh;
+    background-image: url(../img/hoteles.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+.header__opacity {
+    height: 100%;
+    width: 100%;
+    background-color: #00000087;
+    position: relative;
 }
 /* nav */
+.header__nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
 .nav__center {
     width: 90vw;
     margin: 0 auto;
@@ -109,8 +124,8 @@ li {
     border-right: 2px solid var(--color-p);
     padding-bottom: .3rem;
     padding-right: .3rem;
+    color: var(--white);
 }
-
 .nav__btnMenu {
     transition: var(--transition);
 }
@@ -131,6 +146,10 @@ li {
 }
 .link__section {
     font-size: 1.8rem;
+    color: var(--white);
+}
+.link__section--view {
+    border-bottom: 2px solid var(--color-p);
 }
 .nav__socials {
     display: none;
@@ -162,8 +181,14 @@ li {
         align-items: center;
     }
 }
-
-/* modifiers */
-.link__section--view {
-    border-bottom: 2px solid var(--color-p);
+/* header info */
+.header__info {
+    color: var(--white);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    text-transform: capitalize;
 }
