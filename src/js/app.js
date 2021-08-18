@@ -14,7 +14,7 @@ btnMenu.addEventListener('click', () => {
 });
 
 function navScroll() {
-    if(window.scrollY !== 0) {
+    if(window.scrollY > 5) {
         nav.classList.add('bg-white');
     } else {
         nav.classList.remove('bg-white');
