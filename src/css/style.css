@@ -28,7 +28,7 @@ body {
 h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     line-height: 1.25;
 }
 h1 {
@@ -196,8 +196,32 @@ li {
     text-align: center;
     text-transform: capitalize;
 }
+/* nav style bg javascript to scroll*/
+.bg-white {
+    background-color: var(--white);
+    box-shadow: 0px 13px 15px -3px rgba(0,0,0,0.1);
+}
+.bg-white .link__section {
+    color: var(--black);
+}
+.bg-white .nav__logo span {
+    color: var(--black);
+}
+
 /* main */
 /* cards ofertas */
+.main__ofertas {
+    margin-top: 5rem;
+}
+.ofertas__title {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+.ofertas__title h2 {
+    display: inline-block;
+    border-bottom: 2px solid var(--color-p);
+}
 .ofertas__contenedor {
     width: 80%;
     margin: 5rem auto;
@@ -211,6 +235,7 @@ li {
     display: grid;
     gap: 1.5rem;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    position: relative;
 }
 .card__info {
     display: grid;
@@ -218,7 +243,6 @@ li {
 }
 .card__title {
     text-transform: capitalize;
-    letter-spacing: 2px;
 }
 .card__content-img img {
     width: 100%;
@@ -228,6 +252,12 @@ li {
 }
 .card__price {
     color: var(--color-p);
-    font-weight: 600;
+    font-weight: 700;
     text-align: right;
+}
+.img-discount {
+    position: absolute;
+    height: 5rem;
+    top: -15px;
+    right: -15px;
 }
