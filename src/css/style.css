@@ -7,7 +7,7 @@
     --white: #fff;
     --color-p: #fd0061;
     --bg-body: #EBF4FA;
-    --bg-oscuro: #313233;
+    --bg-oscuro: #1f2026;
 
     --transition: all .3s linear;
 }
@@ -83,6 +83,9 @@ ul {
 }
 li {
     list-style: none;
+}
+blockquote {
+    margin: 0;
 }
 
 /* proyect */
@@ -312,3 +315,95 @@ li {
         padding-right: 0;
     }
 }
+/* main nosotros */ 
+.main__nosotros {
+    background-color: var(--bg-oscuro);
+}
+.nosotros__content {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    display: grid;
+    place-items: center;
+}
+.nosotros__text {
+    color: var(--white);
+    margin-bottom: 3.5rem;
+}
+.nosotros__text h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.nosotros__text p:first-of-type {
+    margin-bottom: 2rem;
+}
+.nosotros__img {
+    width: 100%;
+    max-width: 50rem;
+    object-fit: cover;
+    border-radius: 6px;
+}
+@media (min-width: 1400px) {
+    .nosotros__content {
+        padding: 5rem 0;
+        width: 80%;
+        grid-template-columns: 1fr 1fr;
+        height: 50rem;
+        max-width: 1280px;
+    }
+    .nosotros__img {
+        right: 0;
+    }
+}
+/* main testimoniales */
+.main__testimoniales {
+    margin: 5rem 0;
+}
+.testimoniales__title h2 {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.testimoniales__contenedor {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    margin: 0 auto;
+}
+.testimoniales__blockquote {
+    background-color: var(--white);
+    padding: 3rem;
+    display: grid;
+    gap: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+    max-width: 450px;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+.testimonial__icon {
+    width: 10rem;
+    background-color: var(--color-p);
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+.testimonial__name {
+    font-weight: 800;
+    text-align: right;
+}
+@media (min-width: 980px) {
+    .testimoniales__contenedor {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        max-width: 100rem;
+    }
+    .testimoniales__blockquote {
+        margin: 0 auto;
+        transition: var(--transition);
+    }
+    .testimoniales__blockquote:hover {
+        transform: scale(1.05);
+    }
+}
+
