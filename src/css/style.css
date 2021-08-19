@@ -7,6 +7,7 @@
     --white: #fff;
     --color-p: #fd0061;
     --bg-body: #EBF4FA;
+    --bg-oscuro: #313233;
 
     --transition: all .3s linear;
 }
@@ -74,6 +75,7 @@ button {
 a {
     text-decoration: none;
     color: var(--black);
+    cursor: pointer;
 }
 ul {
     padding: 0;
@@ -149,10 +151,11 @@ li {
 }
 .link__section {
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--white);    
 }
-.link__section--view {
+.link__section:hover {
     border-bottom: 2px solid var(--color-p);
+    color: var(--color-p);
 }
 .nav__socials {
     display: none;
@@ -207,6 +210,9 @@ li {
 .bg-white .link__section {
     color: var(--black);
 }
+.bg-white .link__section:hover {
+    color: var(--color-p);
+}
 .bg-white .nav__logo span {
     color: var(--black);
 }
@@ -214,12 +220,11 @@ li {
 /* main */
 /* cards ofertas */
 .main__ofertas {
-    margin-top: 5rem;
+    padding: 8rem 0;
 }
 .ofertas__title {
     width: 100%;
-    display: grid;
-    place-items: center;
+    text-align: center;
 }
 .ofertas__title h2 {
     display: inline-block;
@@ -227,9 +232,10 @@ li {
 }
 .ofertas__contenedor {
     width: 80%;
-    margin: 5rem auto;
+    margin: 5rem auto 0 auto;
     display: grid;
     gap: 5rem;
+    place-items: center;
 }
 .ofertas__card {
     padding: 1.5rem;
@@ -239,6 +245,11 @@ li {
     gap: 1.5rem;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
     position: relative;
+    cursor: pointer;
+    transition: all .1s linear;
+}
+.ofertas__card:hover {
+    transform: scale(1.04);
 }
 .card__info {
     display: grid;
@@ -263,4 +274,41 @@ li {
     height: 5rem;
     top: -15px;
     right: -15px;
-}   
+}
+@media (min-width: 800px) {
+    .ofertas__card {
+        grid-template-columns: 40% 60%;
+        place-items: center;
+        max-height: 250px;
+        max-width: 750px;
+    }
+    .card__content-img {
+        height: 100%;
+    }
+    .card__content-img img {
+        height: 100%;
+    }
+    .card__info {
+        padding-right: 2rem;
+    }
+}
+@media (min-width: 1390px) {
+    .ofertas__contenedor {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .ofertas__card {
+        max-height: none;
+        height: 500px;
+        grid-template-columns: 1fr;
+    }
+    .card__content-img {
+        width: 100%;
+    }
+    .card__content-img img {
+        height: 25rem;
+        width: 100%;
+    }
+    .card__info {
+        padding-right: 0;
+    }
+}
