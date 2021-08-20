@@ -15,6 +15,7 @@
 html {
     box-sizing: border-box; /* paddings sin px extra */
     font-size: 62.5%; /* uso de "rem", 1rem = 10px */
+    scroll-behavior: smooth;
 } 
 *, *:after, *:before {
     box-sizing: inherit; /* paddings sin px extra */
@@ -169,7 +170,7 @@ blockquote {
     transform: rotate(90deg);
 }
 .view-menu {
-    margin-top: 2rem;
+    padding-top: 2rem;
     height: 18rem;
 }
 @media (min-width: 1080px) {
@@ -360,7 +361,7 @@ blockquote {
 }
 /* main testimoniales */
 .main__testimoniales {
-    margin: 5rem 0;
+    padding: 5rem 0;
 }
 .testimoniales__title h2 {
     text-align: center;
@@ -440,6 +441,9 @@ blockquote {
     width: 100%;
     border-radius: 10px;
     max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .contacto__form h3 {
     text-align: center;
